@@ -14,7 +14,7 @@ const mainCharacters = [
     for (let i = 0; i < array.length; i++) {
       if (array[i] === text) {
         index = i;
-        //Salir del bucle si lo encuentra
+        
         break;
       }
     }
