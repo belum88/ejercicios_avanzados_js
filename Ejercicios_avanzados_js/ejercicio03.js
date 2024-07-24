@@ -37,9 +37,7 @@ const users = [
       const favCount = {};
       for (let user of userList) {
         for (let sound in user["favoritesSounds"]) {
-          //Revisando la documentación tenemos el método hasOwnProperty, que nos permite buscar
-          //si una key coincide con otra, de esta manera y volviendo a reutilizar la mecánica de usar
-          //las keys irrepetibles de un objeto podemos filtrar y hacer un simple contador
+         
           if (!favCount.hasOwnProperty(sound)) {
             favCount[sound] = 1;
           } else {
